@@ -8,9 +8,7 @@
 #include <string>
 #include <vector>
 #include <omp.h>
-#ifdef _WIN32
 #include <windows.h>
-#endif
 using namespace std;
 typedef long long ll;
 typedef vector<vector<ll>> Mat;
@@ -262,9 +260,7 @@ void task2() {
 }
 
 int main() {
-#ifdef _WIN32
     SetConsoleOutputCP(CP_UTF8);
-#endif
     cout << fixed << setprecision(4);
     while (true) {
         cout << T("Завдання (1 - сума поліномів, 2 - Флойд-Уоршелл, exit - вихід): ");
